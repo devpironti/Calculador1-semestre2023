@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     
     <main>
+        
         <div>
             <form>
                 <label for="nmr1"><strong>Valor 1:</strong></label>
@@ -28,44 +30,10 @@
                 <input type="text" id="vizuresul" name="vizuresul" readonly><br>
                 <input type="button" value="Calcular" id="resul" onclick="calcular ()"> <br>
                 
-                
+            
             </form>
         </div>
     </main>
-    <script>
-          
-
-
-            function calcular(operacao){
-                var cax1 = Number(document.getElementById('nmr1').value)
-                var cax2 = Number(document.getElementById('nmr2').value)
-                var operacao = document.querySelector('input[name="operacao"]:checked')
-                var resposta 
-                
-                    
-                 
-                
-                    switch (operacao){
-                        case soma: 
-                            resposta = cax1+ cax2
-                            break 
-                        case sub:
-                            resposta = cax1 - cax2
-                            break
-                            case mult:
-                            resposta = cax1 * cax2
-                            break
-                        case divi:
-                            resposta= cax1 / cax2
-                            break
-                           
-                    }
-                    document.getElementById('vizuresul').value = `${resposta}`
-           
-            }
-            
-              
-    
-    </script>
+   
 </body>
 </html>
