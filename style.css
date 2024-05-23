@@ -1,0 +1,21 @@
+div{
+    border: double red 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+    width: 400px;  
+}
+input{
+    font-size: 18pt;
+    border: solid black 1px;
+    margin-top: 3px;
+}
+form{
+    padding: 30px;   
+}
+
+#nmr1, #nmr2, #vizuresul{
+    background-color: yellow;
+    width: 200px;
+    
+}
+
